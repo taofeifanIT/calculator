@@ -1,38 +1,165 @@
+html, body { height: 100%; }
 .App {
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff url(./asset/background.jpg) no-repeat;
+  background-size: 100% 100%;
+  /*padding-top: 13%;*/
+  height: 100%;
+  position: absolute;
+  padding: 30px;
+}
+.topLogo{
+  background-size: cover;
+  height: 187px;
+  position: absolute;
+  top: -17px;
+  left: 0;
+}
+.title{
+  width: 228px;
+  top: 122px;
+  margin-top: 102px;
+}
+.can{
+  margin-top: 70px;
+}
+@font-face {
+  font-family: "思源黑体 NC-Medium";
+  src: url("./asset/SourceHanSansCN-Medium.otf");
+}
+
+.formCan{
+  height: 160px;
+  background: rgba(218,221,240,1);
+  border-radius: 10px;
+  font-family: "思源黑体 NC-Medium", serif;
+}
+.canRow {
+  height: 80px;
+}
+.formCan + .formCan {
+  margin-top: 20px;
+  height: 200px;
+}
+.lableCan {
+  display: inline-block;
+  position: relative;
+  vertical-align: center;
+  height: 80px;
+  width: 26%;
+  text-align: center;
+  border-right: 1px solid #b7aeae;
+}
+.lableCan img {
+  width: 60px;
+}
+.lableCan img + span{
+  font-size: 14px;
+  position: absolute;
+  bottom: 8px;
+  color: #20af94;
+  display: block;
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputCan{
+  width: 69.5%;
+  height: 80px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  text-align: left;
+}
+.first{
+  border-bottom: 1px solid #b7aeae;
+}
+.inputCan p {
+  vertical-align: bottom;
+  margin-top: 25px;
+  color: #20af94;
+}
+.inputCan p span{
+  font-size: 20px;
+  vertical-align: bottom;
+}
+.inputCan input{
+  background:none;
+  outline:none;
+  border:none;
+  height: 40px;
+  display: inline-block;
+  font-size: 20px;
+  width: 60%;
+  border-bottom: 1px solid #20af94;
+  text-align: center;
+  color: #20af94;
+  margin-left: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lastPrice {
+  display: inline-block;
+  color: #20af94;
+  margin-top: 20px;
+  margin-left: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.lastPriceInputCan {
+  box-sizing: border-box;
+  text-align: center;
+  height: 90px;
+  position: relative;
+  padding-top: 30px;
+}
+.lastPriceInputCan label{
+  font-size: 45px;
+  color: #20af94;
+  position: absolute;
+  left: 13.25555%;
+  bottom: 0;
+}
+.lastPriceInputCan input {
+  background:none;
+  outline:none;
+  border:none;
+  height: 40px;
+  display: inline-block;
+  font-size: 23px;
+  width: 45%;
+  border-bottom: 1px solid #20af94;
+  text-align: center;
+  color: #20af94;
+}
+.lastPriceInputCan div + span {
+  font-size: 10px;
+  color: #20af94;
+}
+.contactInformation {
+  font-size: 10px;
+  text-align: center;
+  color: #BABBB5;
+  margin-top: 15px;
+}
+.contactInformation + div {
+  text-align: center;
+}
+button {
+  margin-top: 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 45px;
+  background-color: #20af94;
   color: white;
+  font-size: 16px;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color:  #2CAF90;
 }
 
-.App-link {
-  color: #61dafb;
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:  #2CAF90;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:  #2CAF90;
 }
+
